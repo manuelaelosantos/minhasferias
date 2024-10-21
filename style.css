@@ -9,3 +9,14 @@ padding: 0;
     display: flex;
     justify-content: space-around;
 }
+
+.rodape{
+    background-color: pink;
+    text-align: center;
+}
+
+.rodape-imagem{
+    height: 60px;
+    padding: 12px 0;
+   
+}

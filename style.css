@@ -1,114 +1,112 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livraria Online</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Barra de Navegação -->
-    <header>
-        <nav>
-            <h1>Livraria Online</h1>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#categorias">Categorias</a></li>
-                <li><a href="#promocoes">Promoções</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div id="search-bar">
-                <input type="text" placeholder="Pesquisar livros...">
-                <button>Pesquisar</button>
-            </div>
-        </nav>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- Seção de Livros em Destaque -->
-    <section id="destaque">
-        <h2>Livros em Destaque</h2>
-        <div class="livros">
-            <div class="livro">
-                <img src="livro1.jpg" alt="Livro 1">
-                <h3>Título do Livro 1</h3>
-                <p>Autor: Autor 1</p>
-                <p>Preço: R$29,99</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="livro">
-                <img src="livro2.jpg" alt="Livro 2">
-                <h3>Título do Livro 2</h3>
-                <p>Autor: Autor 2</p>
-                <p>Preço: R$19,99</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <div class="livro">
-                <img src="livro3.jpg" alt="Livro 3">
-                <h3>Título do Livro 3</h3>
-                <p>Autor: Autor 3</p>
-                <p>Preço: R$39,99</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <!-- Adicione mais livros conforme necessário -->
-        </div>
-    </section>
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-    <!-- Seção de Categorias -->
-    <section id="categorias">
-        <h2>Categorias</h2>
-        <div class="categorias-lista">
-            <a href="#">Ficção</a>
-            <a href="#">Biografia</a>
-            <a href="#">História</a>
-            <a href="#">Autoajuda</a>
-            <a href="#">Infantil</a>
-            <!-- Adicione mais categorias conforme necessário -->
-        </div>
-    </section>
+header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
 
-    <!-- Seção de Promoções -->
-    <section id="promocoes">
-        <h2>Promoções</h2>
-        <p>Confira as melhores ofertas e descontos da semana!</p>
-        <div class="promocoes-lista">
-            <div class="livro">
-                <img src="livro-promo1.jpg" alt="Livro em promoção">
-                <h3>Livro em Promoção</h3>
-                <p>Preço: <span class="preco-antigo">R$49,99</span> R$29,99</p>
-                <button>Adicionar ao Carrinho</button>
-            </div>
-            <!-- Adicione mais livros em promoção conforme necessário -->
-        </div>
-    </section>
+header p {
+    font-size: 1em;
+}
 
-    <!-- Seção de Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <form action="enviar-mensagem.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Livraria Online. Todos os direitos reservados.</p>
-        <p>Siga-nos nas redes sociais:</p>
-        <div class="redes-sociais">
-            <a href="#">Facebook</a> |
-            <a href="#">Twitter</a> |
-            <a href="#">Instagram</a>
-        </div>
-    </footer>
+/* Notícia Principal */
+.noticia-principal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
 
-</body>
-</html>
+.noticia-principal h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.noticia-principal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.noticia-principal p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.noticia-principal a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.noticia-principal a:hover {
+    color: #ff8a50;
+}
+
+/* Notícias Recentes */
+.noticias-recentes h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.noticia {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.noticia h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.noticia p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.noticia a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.noticia a:hover {
+    color: #ff5722;
+}
